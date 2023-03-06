@@ -14,3 +14,5 @@ class Car {
     return new Species();
   }
 }
+
+export default Car;
