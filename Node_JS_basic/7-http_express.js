@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/students', async (req, res) => {
-  const msg = 'This is the list of our students';
+  const msg = 'This is the list of our students\n';
   try {
     const students = await countStudents(DATABASE);
     res.send(`${msg}${students.join('\n')}`);
